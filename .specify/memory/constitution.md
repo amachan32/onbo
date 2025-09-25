@@ -1,50 +1,56 @@
-# [PROJECT_NAME] Constitution
-<!-- Example: Spec Constitution, TaskFlow Constitution, etc. -->
+# onbo Constitution
+
+<!--
+Sync Impact Report:
+Version change: N/A → 1.0.0
+Modified principles:
+- Added all core principles for onbo project
+Added sections:
+- Core Principles
+- 技術要件
+- 開発プロセス
+- Governance
+Templates requiring updates:
+✅ .specify/memory/constitution.md
+-->
 
 ## Core Principles
 
-### [PRINCIPLE_1_NAME]
-<!-- Example: I. Library-First -->
-[PRINCIPLE_1_DESCRIPTION]
-<!-- Example: Every feature starts as a standalone library; Libraries must be self-contained, independently testable, documented; Clear purpose required - no organizational-only libraries -->
+### I. リアルタイムコラボレーション
+オンライン上で複数のユーザーが同時にホワイトボードを編集できること。変更はリアルタイムで全ての参加者に反映される。
 
-### [PRINCIPLE_2_NAME]
-<!-- Example: II. CLI Interface -->
-[PRINCIPLE_2_DESCRIPTION]
-<!-- Example: Every library exposes functionality via CLI; Text in/out protocol: stdin/args → stdout, errors → stderr; Support JSON + human-readable formats -->
+### II. 使いやすさ
+直感的なユーザーインターフェースを提供し、特別なトレーニングなしで使用できること。シンプルで分かりやすい操作性を重視する。
 
-### [PRINCIPLE_3_NAME]
-<!-- Example: III. Test-First (NON-NEGOTIABLE) -->
-[PRINCIPLE_3_DESCRIPTION]
-<!-- Example: TDD mandatory: Tests written → User approved → Tests fail → Then implement; Red-Green-Refactor cycle strictly enforced -->
+### III. 信頼性
+データの整合性を保ち、安定したサービスを提供すること。ユーザーの作業内容は確実に保存され、データの損失を防ぐ。
 
-### [PRINCIPLE_4_NAME]
-<!-- Example: IV. Integration Testing -->
-[PRINCIPLE_4_DESCRIPTION]
-<!-- Example: Focus areas requiring integration tests: New library contract tests, Contract changes, Inter-service communication, Shared schemas -->
+### IV. パフォーマンス
+低レイテンシーでスムーズな描画体験を提供すること。多人数での同時編集時も快適に動作する。
 
-### [PRINCIPLE_5_NAME]
-<!-- Example: V. Observability, VI. Versioning & Breaking Changes, VII. Simplicity -->
-[PRINCIPLE_5_DESCRIPTION]
-<!-- Example: Text I/O ensures debuggability; Structured logging required; Or: MAJOR.MINOR.BUILD format; Or: Start simple, YAGNI principles -->
+### V. 拡張性
+機能の追加や改善が容易な設計とすること。将来的な機能拡張に対応できる柔軟なアーキテクチャを採用する。
 
-## [SECTION_2_NAME]
-<!-- Example: Additional Constraints, Security Requirements, Performance Standards, etc. -->
+## 技術要件
 
-[SECTION_2_CONTENT]
-<!-- Example: Technology stack requirements, compliance standards, deployment policies, etc. -->
+- フロントエンド：モダンなWebテクノロジーを使用し、クロスブラウザ対応を確保する
+- バックエンド：スケーラブルなリアルタイム通信を実現する
+- データストレージ：信頼性の高いデータ永続化を実装する
+- セキュリティ：適切な認証・認可機能を実装し、データの保護を確保する
 
-## [SECTION_3_NAME]
-<!-- Example: Development Workflow, Review Process, Quality Gates, etc. -->
+## 開発プロセス
 
-[SECTION_3_CONTENT]
-<!-- Example: Code review requirements, testing gates, deployment approval process, etc. -->
+- テスト駆動開発（TDD）の採用
+- コードレビューの必須化
+- 継続的インテグレーション/デリバリー（CI/CD）の実施
+- ドキュメンテーションの維持・更新
 
 ## Governance
-<!-- Example: Constitution supersedes all other practices; Amendments require documentation, approval, migration plan -->
 
-[GOVERNANCE_RULES]
-<!-- Example: All PRs/reviews must verify compliance; Complexity must be justified; Use [GUIDANCE_FILE] for runtime development guidance -->
+本憲章はプロジェクトの基本方針として、全ての開発活動の指針となる。
 
-**Version**: [CONSTITUTION_VERSION] | **Ratified**: [RATIFICATION_DATE] | **Last Amended**: [LAST_AMENDED_DATE]
-<!-- Example: Version: 2.1.1 | Ratified: 2025-06-13 | Last Amended: 2025-07-16 -->
+- 変更の提案は、プロジェクトメンバーによる検討と承認を必要とする
+- 重要な変更は、移行計画とともに文書化する
+- 定期的なレビューを実施し、原則の遵守状況を確認する
+
+**Version**: 1.0.0 | **Ratified**: 2025-09-24 | **Last Amended**: 2025-09-24
